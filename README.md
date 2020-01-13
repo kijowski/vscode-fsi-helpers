@@ -37,6 +37,13 @@ Currently code navigation is not using AST, but is based on string matching. Bec
 
 ## Release Notes
 
-### 1.0.0
+### 0.0.1
+- Initial release
 
-Initial release of F# interactive helpers
+
+### 0.0.2
+- Update README
+
+### 0.0.3
+- Fix CHANGELOG
+- Add demo video
