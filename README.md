@@ -2,7 +2,7 @@
 
 Easier movement and code selection when working with F# interactive.
 
-Available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=danmannock.vscode-fsharp-refactor)
+Available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=kijowski.fsi-helpers)
 
 ## Features
 
@@ -30,11 +30,9 @@ This is not a requirement, but this extension works best with [Ionide extension]
 
 ## Known Issues
 
-Currently code navigation is not using AST, but it is based on string matching. Because of that it might not be 100% correct, especially with poorly/weirdly formatted code. 
+Currently code navigation is not using AST, but is based on string matching. Because of that it might not be 100% correct, especially with poorly/weirdly formatted code. 
 
 ## Release Notes
-
-Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
