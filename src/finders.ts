@@ -7,7 +7,7 @@ export function findAdjacentTopLevelForms(text: string, cursorPos: number) {
     matches.push(match.index);
   }
   let endIdx = matches.findIndex(idx => idx > cursorPos);
-  if (endIdx > 2) {
+  if (endIdx >= 2) {
     let previous = matches[endIdx - 2];
     let current = matches[endIdx - 1];
     let next = matches[endIdx];
@@ -20,12 +20,12 @@ export function findAdjacentTopLevelForms(text: string, cursorPos: number) {
   } else if (matches.length >= 2) {
     let previous = matches[matches.length - 2];
     let current = matches[matches.length - 1];
-    let next = text.length - 1;
+    let next = text.length;
     return { previous, current, next };
   } else if (matches.length === 1) {
     let previous = matches[0];
     let current = matches[0];
-    let next = text.length - 1;
+    let next = text.length;
     return { previous, current, next };
   } else {
     return null;

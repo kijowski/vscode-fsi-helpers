@@ -58,6 +58,7 @@
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
+		"unittest": "mocha -r ts-node/register ./src/test-unit/**/*.test.ts",
 		"pretest": "npm run compile",
 		"test": "node ./out/test/runTest.js"
 	},
@@ -68,13 +69,14 @@
 		"@types/vscode": "^1.41.0",
 		"glob": "^7.1.5",
 		"mocha": "^6.2.2",
-		"typescript": "^3.6.4",
+		"ts-node": "8.6.1",
 		"tslint": "^5.20.0",
+		"typescript": "^3.6.4",
 		"vscode-test": "^1.2.2"
 	},
 	"license": "MIT",
 	"repository": {
-        "type": "git",
-        "url": "https://github.com/kijowski/vscode-fsi-helpers.git"
-    }
+		"type": "git",
+		"url": "https://github.com/kijowski/vscode-fsi-helpers.git"
+	}
 }
