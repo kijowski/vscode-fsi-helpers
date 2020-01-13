@@ -1,0 +1,80 @@
+{
+	"name": "fsi-helpers",
+	"displayName": "F# interactive helpers",
+	"description": "Various helpers focused on interacting with F# interactive",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:fsi-helpers.goToNextTopLevelForm",
+		"onCommand:fsi-helpers.goToPreviousTopLevelForm",
+		"onCommand:fsi-helpers.goToCurrentTopLevelForm",
+		"onCommand:fsi-helpers.selectTopLevelForm"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "fsi-helpers.goToNextTopLevelForm",
+				"title": "F#: Go to next top level form"
+			},
+			{
+				"command": "fsi-helpers.goToPreviousTopLevelForm",
+				"title": "F#: Go to previous top level form"
+			},
+			{
+				"command": "fsi-helpers.goToCurrentTopLevelForm",
+				"title": "F#: Go to current top level form"
+			},
+			{
+				"command": "fsi-helpers.selectTopLevelForm",
+				"title": "F#: Select top level form"
+			}
+		],
+		"keybindings": [
+			{
+				"key": "Alt-\\",
+				"command": "fsi-helpers.selectTopLevelForm"
+			},
+			{
+				"key": "Alt-[",
+				"command": "fsi-helpers.goToPreviousTopLevelForm"
+			},
+			{
+				"key": "Alt-'",
+				"command": "fsi-helpers.goToCurrentTopLevelForm"
+			},
+			{
+				"key": "Alt-]",
+				"command": "fsi-helpers.goToNextTopLevelForm"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.41.0",
+		"glob": "^7.1.5",
+		"mocha": "^6.2.2",
+		"typescript": "^3.6.4",
+		"tslint": "^5.20.0",
+		"vscode-test": "^1.2.2"
+	},
+	"license": "MIT",
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/kijowski/vscode-fsi-helpers.git"
+    }
+}
