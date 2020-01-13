@@ -6,6 +6,9 @@ Available in the [Visual Studio Marketplace](https://marketplace.visualstudio.co
 
 ## Features
 
+### Demo video
+![Presentation of exesting functionalities](./demo.gif)
+
 ### Select top level form
 
 This command tries to select top level form that encapsulate current cursor position. 
