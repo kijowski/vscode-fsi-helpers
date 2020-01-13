@@ -3,7 +3,7 @@
 	"displayName": "F# interactive helpers",
 	"publisher": "kijowski",
 	"description": "Various helpers focused on interacting with F# interactive",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
